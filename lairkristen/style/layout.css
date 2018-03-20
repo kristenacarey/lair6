@@ -1,0 +1,62 @@
+#container{
+    width: 80%;
+    padding: 1em;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#tent {
+    width: 50%;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#nikolai {width: 50%;
+    float: left;
+    margin-left: 1em;
+    margin-bottom: 1em;}
+
+img {
+    width: 100%
+    height: auto;
+}
+
+h1 {
+    background-color: floralwhite;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 3%;
+    text-align: center;
+}
+
+nav ul {
+    background-color: #1c2f00;
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: right;
+    border: solid; color: floralwhite
+}
+
+nav li {
+    padding: 1%;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+#container > h1 {grid-area: h1;}
+#container > nav {grid-area: nav;}
+
+
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "h1 nav"   
+}
